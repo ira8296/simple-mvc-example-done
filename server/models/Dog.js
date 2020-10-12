@@ -48,7 +48,7 @@ const DogSchema = new mongoose.Schema({
     trim: true,
     unique: false,
   },
-    
+
   age: {
     type: Number,
     min: 0,
@@ -81,9 +81,9 @@ DogSchema.statics.findByName = (name, callback) => {
   return DogModel.findOne(search, callback);
 };
 
-//Create the Dog model
-CatModel = mongoose.model('Dog', DogSchema);
+// Create the Dog model
+DogModel = mongoose.model('Dog', DogSchema);
 
-//Export our public properties
+// Export our public properties
 module.exports.DogModel = DogModel;
 module.exports.DogSchema = DogSchema;

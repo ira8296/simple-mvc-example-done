@@ -6,10 +6,10 @@
     "npm": "6.14.8"
   },
   "description": "A simple Express MVC using only static files",
-  "main": "./server/models/app.js",
+  "main": "./server/app.js",
   "scripts": {
-    "nodemon": "nodemon --watch ./server ./server/models/app.js",
-    "start": "node ./server/models/app.js",
+    "nodemon": "nodemon --watch ./server ./server/app.js",
+    "start": "node ./server/app.js",
     "pretest": "eslint ./server --fix",
     "test": "echo \"tests complete\""
   },
