@@ -14,5 +14,23 @@
   <a href="/">Home</a>
   <a href="/page1">Page 1</a>
   <a href="/page2">Page 2</a>
+  <a href="/page4">Page 4</a>
+    
+  <form id="dogForm" action="/setDogName" method="post">
+      <label for="firstname">First name:</label>
+      <input type="text" name="firstname" value="">
+      <label for="lastname">Last Name: </label>
+      <input type="text" name="lastname" value="">
+      <label for="dogBreed">Breed: </label>
+      <input id="breedField" type="text" name="dogBreed">
+      <label for="age">Age: </label>
+      <input id="ageField" type="number" name="age" min="0" max="13" step="1"/>
+      <input type="submit" value="Create Dog" />
+  </form>
+    
+  <form id="dogSearch" action="findByDogName" method="get">
+      <input id="searchField" type="text" name="userInput">
+    <input type="submit" value="Submit" />
+  </form>
 </body>
 </html>
